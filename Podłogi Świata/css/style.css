@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*      RESET END        */
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+body {
+  height: 100%;
+  min-width: 100%;
+  margin: 0;
+  display: inline-block;
+}
+.background {
+  background-image: url(http://127.0.0.1:49878/images-left/WI-DR-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/*  lewa strona  */
+
+.info {
+  margin-top: 85vh;
+  margin-left: auto;
+  width: 18%;
+  height: 10%;
+  z-index: 20;
+  text-align: justify;
+  color: white;
+}
+
+.info p {
+  width: 100%;
+}
+
+/*  prawa strona  */
+
+.container-mini {
+  width: 100%;
+  background-color: ;
+  margin: 0 0;
+  height: 98vh;
+  text-align: center;
+}
+
+.configuration {
+  text-align: center;
+}
+
+.logo img {
+  width: 60%;
+  margin: 20px 35px;
+}
+#photo {
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#position {
+  float: right;
+  height: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#correct {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.forms {
+  padding: 10% 12%;
+  font-weight: normal;
+  max-width: 400px;
+  text-align: left;
+  color:#909090;
+}
+
+.two-columns {
+  display: inline-block;
+  width: 100%;
+}
+
+.row:before {
+	content: "";
+	display: table;
+	clear: both;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+ .two-columns .form-control {
+  width: 100%;
+  margin: 0;
+}
+
+.two-columns .form-group {
+  margin-left: 0;
+  margin-right: 20px;
+  margin: 0;
+}
+
+.button1 {
+  width: 100%;
+  padding: 0 auto;
+  text-align: center;
+  margin: 20px auto
+}
+
+.button2 {
+  width: 100%;
+  padding: 0 auto;
+  text-align: center;
+  margin: 0 auto
+}
+
+.btn {
+  width: auto;
+}
+.btn-default {
+  border-color: black;
+  background-color:  black;
+  color: white;
+  border-radius: 0;
+}
+
+.col-6 {
+  width: 49%;
+  margin: 0;
+  height: 100px;
+}
+
+.two-columns .form-inline label {
+  margin: 10px 0;
+}
+
+.two-columns .form-inline .col-6 label {
+  height: 35px;
+}
+
+#replace {
+  text-align: center;
+  margin: 0 auto;
+  height: 10%;
+  margin-top: 8vh;
+}
+
+h4 {
+  
+}
+
+@media screen and (max-width: 420px) {
+  
+  .background {
+    background-image: none;
+  }
+  .container-mini {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #position {
+    float: none;
+    text-align: center;
+  }
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 420px) and (max-width: 991px) {
+  
+  .background {
+    background-image: none;
+  }
+  
+  .col-md-3 {
+    width; 100%;
+  }
+  
+  .container-mini {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+  }
+  #position {
+    float: none;
+    height: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .logo img {
+    width: auto;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .forms {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .container-mini {
+    width: 100%;
+    margin: 25px 5%;
+    height: 100vh;
+  }
+  .logo img {
+    width: auto;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {}
